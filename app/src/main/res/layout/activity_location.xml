@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.marthaalvarado.share.Location">
+
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:fontFamily="cursive"
+        android:text="Casa Museo José Alfredo Jiménez"
+        android:textColor="@android:color/holo_purple"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+
+    <TextView
+        android:id="@+id/txt_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txt_textLocation"
+        android:layout_alignStart="@+id/txt_textLocation"
+        android:layout_below="@+id/txt_title"
+        android:layout_marginTop="27dp"
+        android:text="Ubicación"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="84dp" />
+
+    <TextView
+        android:id="@+id/txt_textLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btn_location"
+        android:layout_alignLeft="@+id/txt_schedules"
+        android:layout_alignStart="@+id/txt_schedules"
+        android:text="Calle Zacatecas #444"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="124dp" />
+
+    <TextView
+        android:id="@+id/txt_schedules"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txt_schedulesText"
+        android:layout_alignStart="@+id/txt_schedulesText"
+        android:layout_below="@+id/txt_textLocation"
+        android:layout_marginTop="24dp"
+        android:text="Horarios"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="175dp" />
+
+    <TextView
+        android:id="@+id/txt_schedulesText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txt_schedules"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="29dp"
+        android:text="Martes-Domingo 10:00 am- 5:00 pm"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="218dp" />
+
+    <TextView
+        android:id="@+id/txt_sched"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txt_schedulesText"
+        android:layout_alignStart="@+id/txt_schedulesText"
+        android:layout_below="@+id/txt_schedulesText"
+        android:layout_marginTop="20dp"
+        android:text="Lunes, permanece cerrado"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="260dp" />
+
+    <Button
+        android:id="@+id/btn_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_title"
+        android:layout_marginTop="48dp"
+        android:layout_toEndOf="@+id/txt_sched"
+        android:layout_toRightOf="@+id/txt_sched"
+        android:background="@android:color/holo_green_dark"
+        android:text="Ubicación"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="259dp"
+        tools:layout_editor_absoluteY="124dp" />
+
+    <Button
+        android:id="@+id/btn_comment"
+        android:layout_width="205dp"
+        android:layout_height="51dp"
+        android:layout_above="@+id/btn_visit"
+        android:layout_alignEnd="@+id/txt_schedulesText"
+        android:layout_alignRight="@+id/txt_schedulesText"
+        android:layout_marginBottom="11dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@color/colorPrimaryDark"
+        android:onClick="nextActivity2"
+        android:text="Compartir comentario"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="94dp"
+        tools:layout_editor_absoluteY="325dp" />
+
+    <Button
+        android:id="@+id/btn_visit"
+        android:layout_width="113dp"
+        android:layout_height="49dp"
+        android:layout_alignEnd="@+id/txt_sched"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/txt_sched"
+        android:layout_marginBottom="15dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Visitar sitio"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold"
+        android:onClick="next"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="393dp" />
+</RelativeLayout>
