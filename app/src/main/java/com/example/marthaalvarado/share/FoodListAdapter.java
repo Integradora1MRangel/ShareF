@@ -12,9 +12,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-/**
- * Created by Quoc Nguyen on 13-Dec-16.
- */
+
 
 public class FoodListAdapter extends BaseAdapter {
 

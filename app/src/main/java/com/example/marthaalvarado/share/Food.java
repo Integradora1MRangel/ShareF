@@ -1,8 +1,5 @@
 package com.example.marthaalvarado.share;
 
-/**
- * Created by Quoc Nguyen on 13-Dec-16.
- */
 
 public class Food {
     private int id;

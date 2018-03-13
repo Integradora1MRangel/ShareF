@@ -29,9 +29,7 @@ import java.io.FileNotFoundException;
 import java.io.InputStream;
 import java.util.ArrayList;
 
-/**
- * Created by Quoc Nguyen on 13-Dec-16.
- */
+
 
 public class FoodList extends AppCompatActivity {
 
